@@ -1,0 +1,91 @@
+/* BIG TABLET TO 1200px (width smaller than the 1140px row)  */
+@media only screen and (max-width:1200px) {
+  
+  header,section,footer {
+    padding: 20px;
+  }
+
+  .hero-text-box {
+    flex-direction: column-reverse;
+  }
+
+  .hero-text-box > div {
+    text-align: center;
+  }
+
+}
+
+/* SMALL TABLET TO BIG TABLET: FROM 767px TO 1023px  */
+
+@media only screen and (max-width: 1024px) {
+  
+
+  section:first-of-type img , section:nth-of-type(3) img {
+    width: 30%;
+  }
+}
+
+
+/* SMALL PHONES TO SMALL TABLET : FROM 480px TO 767px  */
+
+@media only screen and (max-width: 768px) { 
+  li {
+    margin-left: 40px;
+  }
+
+  section:nth-of-type(2) > div > div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/* SMALL PHONES : FROM 375px TO 480px  */
+@media only screen and (max-width: 481px) {
+  .hero-text-box > div:last-of-type {
+    display: none;
+  }
+
+  section:nth-of-type(2) > div {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  section:nth-of-type(2) p {
+    width: auto;
+    text-align: center;
+  }
+
+  section:first-of-type img , section:nth-of-type(3) img {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  footer > div > div {
+    width: auto;
+  }
+
+  .btn_2 {
+    display: none;
+  }
+
+  section:nth-of-type(5) > div {
+    width: auto;
+    margin: auto;
+    text-align: center;
+  }
+
+  li a {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+
+/* SMALL PHONES : FROM 0 TO 375px  */
+@media only screen and (max-width: 376px) {
+
+
+}

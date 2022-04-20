@@ -1,0 +1,359 @@
+/*----------------------------------------------------*/
+/* BASIC SETUP */
+/*----------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100vw;
+  color: rgb(37, 54, 133);
+  overflow-x: hidden;
+}
+
+
+/*----------------------------------------------------*/
+/* HEADINGS */
+/*----------------------------------------------------*/
+
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  padding: 12px 0;
+  color: rgb(141, 141, 141);
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/*----------------------------------------------------*/
+/* BUTTON */
+/*----------------------------------------------------*/
+
+.btn {
+  display: table-cell;
+  width: 486px;
+  height: 80px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  border-radius: 10px;
+  
+}
+
+.blue {
+  background: rgb(37, 54, 133);
+  color: rgb(255, 255, 255);
+}
+
+.blue:hover {
+  cursor: pointer;
+  background: rgb(7, 20, 77);
+}
+
+.white {
+  color: rgb(37, 54, 133);
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(37, 54, 133);
+}
+
+section:nth-of-type(5) .white:hover {
+  background: rgb(37, 54, 133);
+  color: rgb(255, 255, 255);
+}
+
+
+
+.btn_2 {
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 24px;
+  color: rgb(37, 54, 133);
+  padding: 8px 14px;
+  border: 1px solid rgb(37, 54, 133);
+  margin-left: 24px;
+}
+
+.active {
+  background: rgb(37, 54, 133);
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+/*----------------------------------------------------*/
+/* HEADER */
+/*----------------------------------------------------*/
+
+header {
+  padding: 46px 120px;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+nav p {
+  font-size: 36px;
+}
+
+ul {
+
+}
+
+li {
+  float: left;
+  list-style-type: none;
+  margin-left: 91px;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+li a:hover {
+  border-bottom: 1px solid rgb(37, 54, 133);
+}
+
+.hero-text-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px 0;
+  align-items: center;
+}
+
+.hero-text-box p {
+  font-size: 24px;
+  padding: 8px 0;
+}
+
+.hero-text-box span,
+.hero-text-box i {
+  color: rgb(141, 141, 141);
+  font-size: 20px;
+  padding: 8px 0;
+}
+
+
+
+/*----------------------------------------------------*/
+/* SECTION*/
+/*----------------------------------------------------*/
+
+section {
+  padding: 120px;
+}
+
+/*----------------------------------------------------*/
+/* FIRST AND THIRD SECTION*/
+/*----------------------------------------------------*/
+
+section:first-of-type,
+section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section:first-of-type > div:first-of-type {
+  display: flex;
+  justify-content: center;
+}
+
+
+section:first-of-type > div:last-of-type,
+section:nth-of-type(3) > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 80px 0;
+}
+
+/*----------------------------------------------------*/
+/* SECOND SECTION*/
+/*----------------------------------------------------*/
+
+section:nth-of-type(2) {
+  background: rgb(234, 220, 252);
+  
+}
+
+section:nth-of-type(2) > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+section:nth-of-type(2) > div > div {
+  display: flex;
+  flex-direction: row;
+}
+
+section:nth-of-type(2) > div > div > div {
+  margin-right: 40px;
+}
+
+section:nth-of-type(2) > div {
+  margin: 60px 0;
+}
+
+section:nth-of-type(2) p {
+  width: 289px;
+  margin: 24px 0;
+  font-size: 16px;
+}
+
+/*----------------------------------------------------*/
+/* FOURTH SECTION*/
+/*----------------------------------------------------*/
+
+section:nth-of-type(4) {
+
+}
+section:nth-of-type(4) > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid rgb(33, 33, 33);
+}
+
+section:nth-of-type(4) i {
+  color: rgb(141, 141, 141);
+
+}
+
+section:nth-of-type(4) p {
+  color: rgb(33, 33, 33);
+  font-size: 24px;
+  font-weight: 500;
+
+}
+
+/*----------------------------------------------------*/
+/* FIFTH SECTION*/
+/*----------------------------------------------------*/
+
+section:nth-of-type(5) {
+  background: rgb(234, 220, 252);
+  
+
+}
+
+section:nth-of-type(5) > div {
+  width: 486px;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+section:nth-of-type(5) > div > p:first-of-type {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+section:nth-of-type(5) > div > p:last-of-type {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+/*----------------------------------------------------*/
+/* FOOTER */
+/*----------------------------------------------------*/
+
+footer {
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer > div > div {
+  width: 300px;
+}
+
+footer > p {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+footer > div > div > p{
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 16px;
+} 
+
+footer > div > div > p:nth-of-type(2),
+footer > div > div > p:nth-of-type(3) {
+  font-weight: 500;
+  font-size: 14px;
+} 
+
+.icon {
+  background: rgb(229, 243, 255);
+  border-radius: 50%;
+  padding: 12px;
+}
+
+/*----------------------------------------------------*/
+/* LAST DIV */
+/*----------------------------------------------------*/
+
+body > div {
+  float: right;
+  margin: 120px;
+}
+
+
